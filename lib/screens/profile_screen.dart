@@ -35,12 +35,21 @@ class ProfileScreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.sms_outlined, size: 18, color: Colors.grey,),
-                  SizedBox(width: 4,),
-                  Text("Support", style: GoogleFonts.raleway(
-                    fontSize: 12,
+                  Icon(
+                    Icons.sms_outlined,
+                    size: 18,
                     color: Colors.grey,
-                  ),)
+                  ),
+                  SizedBox(
+                    width: 4,
+                  ),
+                  Text(
+                    "Support",
+                    style: GoogleFonts.raleway(
+                      fontSize: 12,
+                      color: Colors.grey,
+                    ),
+                  )
                 ],
               ),
             ),
@@ -61,9 +70,10 @@ class ProfileScreen extends StatelessWidget {
                   Row(
                     children: [
                       CircleAvatar(
-                        backgroundColor: Colors.black, 
+                        backgroundColor: Colors.black,
                         radius: 35,
-                        child: Image.asset("assets/images/profile.jpg", height: 60, width: 60),
+                        child: Image.asset("assets/images/profile.jpg",
+                            height: 60, width: 60),
                       ),
                       SizedBox(width: 16),
                       Column(
@@ -205,7 +215,8 @@ class ProfileScreen extends StatelessWidget {
                   SizedBox(height: 24),
                   Text('TRANSACTIONS & SUPPORT',
                       style: GoogleFonts.raleway(
-                          color: Colors.grey,)),
+                        color: Colors.grey,
+                      )),
                   ListTile(
                     contentPadding: EdgeInsets.zero,
                     title: Text('all transactions'),
